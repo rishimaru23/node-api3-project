@@ -36,6 +36,7 @@ router.put('/:id',validateUserId, validateUser,(req, res) => {
   // this needs a middleware to verify user id
   // and another middleware to check that the request body is valid
   console.log(req.user)
+  console.log(req.name)
 });
 
 router.delete('/:id', validateUserId, (req, res) => {
